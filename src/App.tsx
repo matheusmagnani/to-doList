@@ -1,5 +1,8 @@
 import { PlusCircle } from "@phosphor-icons/react";
 
+import { HasNoTasks } from "./components/HasNoTasks"
+import { Task } from "./components/Task";
+
 export function App() {
 
   return (
@@ -25,7 +28,7 @@ export function App() {
           </div>
 
           <div className=" text-gray-100 mt-[64px] w-[736px]">
-            <div className=" flex flex-row justify-between justify-center object-fill">
+            <div className="pb-[24px] flex flex-row justify-between justify-center ">
 
               <p className="text-blue-light font-bold text-[14px] ">Tarefas criadas
                <span className="ml-[8px] bg-gray-400 text-gray-200 rounded-full py-0.5 px-2">0</span>
@@ -36,15 +39,12 @@ export function App() {
               </p>
 
             </div>
+
+            <Task/>
+            <Task/>
+            <Task/>
+            <Task/>
             
-            <div className="mt-[24px] p-[64px] border-t-[1px] border-gray-400 flex flex-col items-center">
-
-              <img src="../assets/clipboard.svg" />
-              <p className="text-gray-300 font-bold text-[16px] mt-[16px]">Você ainda não tem tarefas cadastradas</p>
-              <p className="text-gray-300 text-[16px]">Crie tarefas e organize seus itens a fazer</p>
-              
-            </div>
-
           </div>
 
         </main>
