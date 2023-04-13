@@ -21,7 +21,6 @@ export default {
         "blue-dark": "#1E6F9F",
       
       },
-      
     },
   },
   plugins: [],

@@ -4,6 +4,10 @@
 
 @layer base {
 
+  body {
+    background-color: #1A1A1A;
+  }
+
   body,
   input,
   button {
